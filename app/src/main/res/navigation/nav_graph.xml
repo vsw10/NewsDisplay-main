@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.husqvarna.newsapp.ui.home.HomeFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeDetailsFragment"
+            app:destination="@+id/HomeDetailsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_BookmarkedFragment"
+            app:destination="@+id/BookmarkedFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_SearchNewsFragment"
+            app:destination="@+id/SearchNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HomeDetailsFragment"
+        android:name="com.husqvarna.newsapp.ui.home.HomeDetailsFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_HomeDetailsFragment_to_HomeFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BookmarkedFragment"
+        android:name="com.husqvarna.newsapp.ui.bookmarked.BookmarkedFragment" >
+    <action
+        android:id="@+id/action_BookmarkedFragment_to_SearchNewsFragment"
+        app:destination="@+id/SearchNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchNewsFragment"
+        android:name="com.husqvarna.newsapp.ui.search.SearchNewsFragment" />
+</navigation>

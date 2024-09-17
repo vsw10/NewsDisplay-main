@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="eight_sp">8sp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="forty_dp">40dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="fourteen_dp">14dp</dimen>
+    <dimen name="fourteen_sp">14sp</dimen>
+    <dimen name="item_corner_radius">10dp</dimen>
+    <dimen name="nine_sp">9sp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="sixty_four_dp">64dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="thirty_sp">30sp</dimen>
+    <dimen name="thirty_two_dp">32dp</dimen>
+    <dimen name="three_dp">3dp</dimen>
+    <dimen name="twelve_dp">12dp</dimen>
+    <dimen name="eighteen_dp">18dp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="twenty_four_dp">24dp</dimen>
+    <dimen name="twenty_six_dp">26dp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_two_dp">22dp</dimen>
+    <dimen name="twentytwo_sp">22sp</dimen>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="twosixty_dp">260dp</dimen>
+
+    <dimen name="text_size24">24sp</dimen>
+
+    <dimen name="cardview_height">75dp</dimen>
+    <dimen name="cardview_width">85dp</dimen>
+    <dimen name="global_news_search_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.husqvarna.newsapp.com.husqvarna.newsapp.MainActivity">
+    <item
+        android:icon="@drawable/ic_baseline_search_48"
+        android:id="@+id/search"
+        android:title="@string/search_menu_title"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+</menu>

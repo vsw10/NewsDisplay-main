@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/item_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popular_news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/eight_dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="@dimen/cardview_width"
+            android:layout_height="@dimen/cardview_width"
+            app:cardCornerRadius="@dimen/eight_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/popular_news_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_placeholder" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/popular_news_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/top_news_headline"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/popular_news_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/top_news_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp"
+            app:layout_constraintLeft_toRightOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/popular_news_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/news_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:src="@drawable/ic_baseline_source_16"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/popular_news_headline" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/news_bookmarked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:src="@drawable/ic_outline_bookmark_border_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/news_source"
+            app:layout_constraintTop_toBottomOf="@+id/popular_news_headline" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
