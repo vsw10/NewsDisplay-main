@@ -15,6 +15,8 @@ Implemented the following things:
 8. Delete/Remove Bookmarked News Articles 
 9. Added Search Screen
 
+    [Refer Screenshots]
+
 Following libraries have been used 
 1. MVVM
 2. Navigation
