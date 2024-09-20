@@ -10,7 +10,7 @@ import io.reactivex.schedulers.Schedulers
 class NewsDataSource(
     val apiEndPoints: APIEndPoints,
     private val apiKey: String,
-    private val country: String
+    private val value: String
 ) :
     RxPagingSource<Int, NewsResponse.NewsTop>() {
 
@@ -18,10 +18,15 @@ class NewsDataSource(
     override fun loadSingle(params: LoadParams<Int>):
             Single<LoadResult<Int, NewsResponse.NewsTop>> {
         val position = params.key ?: 1
-        return apiEndPoints.topHeadlines(country, apiKey)
+        return apiEndPoints.topSourcesHeadlines(value, apiKey)
             .subscribeOn(Schedulers.io())
             .map { toLoadResult(it, position) }
-            .onErrorReturn { LoadResult.Error(it) }
+            .onErrorReturn { LoadResult.Error(it)
+//                apiEndPoints.topHeadlines(country, apiKey)
+//            .subscribeOn(Schedulers.io())
+//            .map { toLoadResult(it, position) }
+//            .onErrorReturn { LoadResult.Error(it)
+            }
     }
 
     private fun toLoadResult(

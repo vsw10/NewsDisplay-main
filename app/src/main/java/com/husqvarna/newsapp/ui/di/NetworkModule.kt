@@ -29,7 +29,7 @@ val networkModule = module {
     single(named("NEWS_DATA_SOURCE")) {
         NewsDataSource(
             apiEndPoints = get(named("GET_API_SERVICE")), apiKey =
-            get(named("NEWS_API_KEY")), country = get(named("GET_LOCALE"))
+            get(named("NEWS_API_KEY")), value = get(named("GET_LOCALE"))
         )
     }
 

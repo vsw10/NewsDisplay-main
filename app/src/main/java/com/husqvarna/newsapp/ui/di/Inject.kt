@@ -11,6 +11,7 @@ import com.husqvarna.newsapp.data.datasource.NewsDataSource
 object Inject {
 
     fun provideLocale(): String = "in"
+    fun provideSources(): String = "techcrunch"
 
     fun provideHomeViewModel(context: Context):
             ViewModelProvider.Factory {
@@ -19,7 +20,8 @@ object Inject {
             NewsDataSource(
                 apiEndPoints = APIEndPoints.create(),
                 apiKey = Configuration.NEWS_API_KEY,
-                country = provideLocale()
+                value = provideSources()
+//                country = provideLocale()
             )
 
         val repository =

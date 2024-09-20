@@ -8,10 +8,10 @@ import com.husqvarna.newsapp.logs.NDLogs
 import com.husqvarna.newsapp.model.NewsArticleDetails
 import com.husqvarna.newsapp.ui.viewholder.NewsViewHolder
 import com.husqvarna.newsapp.R
+import com.husqvarna.newsapp.realm.RealmRecyclerViewAdapter
 import io.reactivex.subjects.PublishSubject
 import io.realm.OrderedRealmCollection
 import io.realm.Realm
-import io.realm.RealmRecyclerViewAdapter
 
 class NewsBookmarkedAdapter(
     val context: Context,

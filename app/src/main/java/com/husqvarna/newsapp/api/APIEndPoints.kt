@@ -27,6 +27,12 @@ interface APIEndPoints {
         @Query("apiKey") apiKey: String?,
     ): Single<NewsResponse>
 
+    @GET(APIEndPointsConstant.TOP_HEADLINES)
+    fun topSourcesHeadlines(
+        @Query("sources") sources: String?,
+        @Query("apiKey") apiKey: String?,
+    ): Single<NewsResponse>
+
 
     companion object {
 
